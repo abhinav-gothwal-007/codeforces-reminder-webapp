@@ -1,0 +1,7 @@
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-Mail
+Flask-APScheduler
+python-dotenv
+requests

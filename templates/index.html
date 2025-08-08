@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+  <h1>Subscribe for Codeforces Contest Reminders</h1>
+  <form method="post">
+    <input type="email" name="email" placeholder="Your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+  <h2>Current Subscribers</h2>
+  <ul>
+    {% for u in users %}
+      <li>{{ u.email }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
